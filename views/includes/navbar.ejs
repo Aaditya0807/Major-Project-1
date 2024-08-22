@@ -1,0 +1,26 @@
+<nav class="navbar navbar-expand-md bg-body-light border-bottom sticky-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="/home"><i class="fa-brands fa-stack-overflow"></i></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-link" href="">Home</a>
+          <a class="nav-link" href="/home/listings">All Listings</a>
+          <a class="nav-link" href="/listings/new">Add new Listing</a>
+        </div>
+        <div class="navbar-nav ms-auto">
+        <form class="d-flex">
+          <input class=" search-inp form-control me-2" type="search" placeholder="Search Jobs">
+          <button class="search-btn btn-outline-success" type="submit"><i class="fa-solid fa-magnifying-glass"></i>Search</button>
+        </form>
+        </div>
+        <div class="navbar-nav ms-auto">
+          <form method="POST" action="/logout">
+           <button class="logout mt-2">Logout</button>
+          </form>
+         </div>
+      </div>
+    </div>
+  </nav>

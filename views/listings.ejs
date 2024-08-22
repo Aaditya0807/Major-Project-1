@@ -1,0 +1,65 @@
+<% layout("/layouts/boilerplate") %>
+<link rel="stylesheet" href="/listings.css">
+<div class="container">
+    <div class="filter-container">
+        <form method="POST" action="/home/listings?_method=PUT">
+        <h3>All Filters</h3>
+        <hr>
+        <!-- Add your filter options here -->
+        <b><label for="location">Location:</label></b><br>
+        <input type="checkbox" id="Delhi" name="location">
+        <label for="Delhi">Delhi</label><br>
+        <input type="checkbox" id="Hyderabad" name="location">
+        <label for="Hyderabad">Hyderabad</label><br>
+        <input type="checkbox" id="Mumbai" name="location">
+        <label for="Mumbai">Mumbai</label><br>
+        <hr>
+        
+        <b><label for="job-type">Job Type:</label></b>
+        <select id="job-type" name="job-type">
+            <option value="full-time">Full-time</option>
+            <option value="part-time">Part-time</option>
+            <option value="contract">Contract</option>
+        </select><br><br><hr>
+
+        <b><label for="work">Work mode:</label></b><br>
+        <input type="radio" id="wfo" name="work-mode">
+        <label for="wfo">Work from office</label><br>
+        <input type="radio" id="hybrid" name="work-mode">
+        <label for="hybrid">Hybrid</label>  <br>
+        <hr>
+
+        <b><label for="salary-range">Salary Range:</label></b><br>
+        <input type="checkbox" id="3L" name="salary">
+        <label for="3L">0-3Lakhs</label><br>
+        <input type="checkbox" id="Hyderabad" name="salary">
+        <label for="6L">3-6Lakhs</label><br>
+        <input type="checkbox" id="Mumbai" name="salary">
+        <label for="10L">6-10Lakhs</label><br>
+        <hr>
+       
+
+        <button type="button">Apply Filters</button>
+    </div>
+</form>
+    <div class="job-listings">
+        <h2>All Listings</h2>
+        <ul style="list-style-type: none; padding: 0; margin: 0;">
+            <% for(user of users) { %>
+                <li>
+                    <a href="/listings/<%= user.id %>" class="listing-link">
+                        <div class="job-card">
+                            <h3 class="job-title"><%= user.title %></h3>
+                            <p class="company"><%= user.company %></p>
+                            <p class="location"><i class="fa-solid fa-map-pin"></i>&nbsp;<%= user.location %></p>
+                            <p class="type"><%= user.type %></p>
+                            <p class="salary">&#8377;<%= user.salary.toLocaleString("en-IN") %> / annum</p>
+                        </div>
+                    </a>
+                </li>
+            <% } %>
+        </ul>
+    </div>
+</div>
+
+

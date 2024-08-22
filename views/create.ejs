@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create account</title>
+    <link rel="stylesheet" href="/create.css">
+</head>
+<body>
+    <div>
+        <form class="signup-form" method="post" action="/home">
+            <h2>Signup</h2>
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+            <br>
+
+            <label for="mobile">Phone No:</label>
+            <input type="text" id="mobile" name="mobile" required>
+            <br>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <br>
+            
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+            <br>
+            
+            <label for="confirm-password">Confirm Password:</label>
+            <input type="password" id="confirm-password" name="confirmpass" required equalTo="#password">
+            <br>
+            
+            <button type="submit">Sign Up</button>
+        </form>
+        
+    </div>
+    <% if (typeof message !== 'undefined') { %>
+        <script>
+            alert("<%= message %>");
+        </script>
+        <% } %>
+    
+    
+    
+    
+</body>
+</html>

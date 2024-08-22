@@ -1,0 +1,68 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Center the form container on the page */
+body, html {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f7f7f7;
+}
+
+/* Styling the form container */
+.form-container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    width: 300px;
+}
+
+/* Styling the form */
+.signup-form {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Styling the form header */
+.signup-form h2 {
+    margin-bottom: 20px;
+    text-align: center;
+    color: #333;
+}
+
+/* Styling the form labels */
+.signup-form label {
+    margin-bottom: 5px;
+    color: #555;
+}
+
+/* Styling the form inputs */
+.signup-form input {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* Styling the submit button */
+.signup-form button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #007BFF;
+    color: white;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Adding hover effect to the button */
+.signup-form button:hover {
+    background-color: #0056b3;
+}

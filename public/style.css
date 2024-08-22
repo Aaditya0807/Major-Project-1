@@ -1,0 +1,61 @@
+.login{
+    position:absolute;
+    right: 100px;
+    top: 80px;
+    height: 400px;
+    width:400px;
+    border:2px solid #007BFF;
+    border-radius: 10px;
+    padding: 50px;
+    background-color:#ffffff ;
+}
+#content{
+    width:250px;
+    color: #007BFF;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    border:2px solid #f0f2f5;
+    padding: 5px;
+    position: absolute;
+    top: 200px;
+    left:150px;
+}
+.create{
+    position:absolute;
+    bottom: 70px;
+    right: 150px;
+}
+.rounded-form{
+    width: 300px;
+    padding: 20px;
+    margin: 0 auto;
+    border: 1px solid #ccc;
+    border-radius: 15px; /* Adding rounded corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: white;
+}
+.rounded-form input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 15px; /* Optional: Rounded corners for input fields */
+}
+h2{
+    text-align: center;
+}
+#forgot{
+    position: absolute;
+    left: 90px;
+    
+}
+body{
+    background-color:#f0f2f5;
+}
+button{
+    background-color: #007BFF;
+    color: white;
+    border: none !important;
+}
+button:hover{
+    opacity: 0.5;
+}

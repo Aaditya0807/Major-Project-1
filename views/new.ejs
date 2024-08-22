@@ -1,0 +1,65 @@
+<% layout("/layouts/boilerplate") %>
+<body>
+    <div class="row mt-3">
+        <div class="col-8 offset-2">
+            
+    <h3>Create a New Listing</h3>
+    <form method="POST" action="/listings" class="needs-validation" novalidate>
+        <div class="mb-3">
+            <label for="title" class="form-label">Title</label>
+            <input type="text" name="title" placeholder="Add Job Title" class="form-control" required>
+            <div class="valid-feedback">Title looks good!</div>
+        </div>
+        
+        <div class="mb-3">
+            <label for="company" class="form-label">Company</label>
+            <input type="text" name="company" placeholder="Enter company's name" class="form-control" required>
+            <div class="invalid-feedback">Please enter company's name</div>
+        </div>
+        
+        <div class="mb-3">
+            <label for="location" class="form-label">Location</label>
+            <input type="text" name="location" placeholder="Delhi, India" class="form-control" required>
+            <div class="invalid-feedback">Location should be valid!</div>
+        </div>
+        <div class="row">
+            <div class="mb-3 col-5 md-6">
+                <label for="type" class="form-label">Type</label>
+                <input type="text" name="type" placeholder="Full-time/Part-time" class="form-control" required>
+                <div class="invalid-feedback">Please enter valid job type</div>
+            </div>
+           <div class="mb-3 col-4 md-4">
+                <label for="salary" class="form-label">Salary</label>
+                <input name="salary" placeholder="Salary/annum" type="number" class="form-control" required>
+                <div class="invalid-feedback">Salary should be valid</div>
+           </div>
+        </div>
+        <div class="mb-3">
+            <label for="description" class="form-label">Description</label>
+            <textarea name="description" placeholder="Enter job description" class="form-control" required></textarea>
+            <div class="invalid-feedback">Please enter a short description</div>
+        </div>
+        <div class="mb-3 col-5 md-6">
+            <label for="job_highlights" class="form-label">Job Highlights</label>
+            <input name="job_highlights" placeholder="Enter Job highlights *" type="text" class="form-control" required>
+            <div class="invalid-feedback"></div>
+        </div>
+        <div class="mb-3 col-5 md-6">
+            <input name="job_highlights" placeholder="Enter Job highlights" type="text" class="form-control" >
+        </div>
+        <div class="row">
+            <div class="mb-3 col-4 md-4">
+                <label for="required_skills" class="form-label">Skills required</label>
+                <input type="text" name="required_skills" placeholder="skill 1 *" class="form-control" required>
+                <div class="invalid-feedback">Please enter atleast 1 skill</div>
+                <input name="required_skills" placeholder="Skill 2" type="text" class="form-control" >
+            </div>
+        </div>
+        
+        
+        <button class="btn btn-dark add-btn mt-3">Add</button>
+        
+    </form>
+</div>
+</div>
+</body>

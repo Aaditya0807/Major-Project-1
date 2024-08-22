@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Stack</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        .home{
+            display: flex;
+            position: absolute;
+            top: 200px;
+            right:600px;
+        }
+        form{
+            margin: 10px;
+        }
+        button{
+            padding: 10px 20px;
+            border: none;
+            font-size: 16px;
+            border-radius: 10px;
+            cursor:pointer;
+        }
+        .signup{
+            background-color: #007BFF;
+            color: white;
+        }
+        #title{
+            color: #007BFF;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            margin-top: 50px;
+            text-align: center;
+            display: flex;
+            margin-left: 570px ;
+        }
+        span{
+            font-size: 3em;
+            width: 1em;
+      height: 1em;
+      line-height: 1em;
+        }
+        /* #title:hover{
+            color: antiquewhite;
+        } */
+         button:hover{
+            opacity: 0.5;
+         }
+    </style>
+</head>
+<body>
+    <div id="title">
+        <span class="fa-brands fa-stack-overflow"></span>
+        <h1>JOBSTACK</h1>
+    </div>
+    <div class="home">
+        <form method="get" action="/home/login">
+            <button class="login">Login</button>
+        </form>
+        <form  method="get" action="/home/register">
+        <button class="signup">Signup</button>
+    </form>
+        
+    </div>
+</body>
+</html>

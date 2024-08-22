@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOGIN</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+</head>
+<body>
+    <% if (errorMessages.length > 0) { %>
+        <div>
+          <% errorMessages.forEach(function(message) { %>
+            <p style="color: red;"><%= message %></p>
+          <% }); %>
+        </div>
+      <% } %>
+    <div id="content">
+        <h1>Welcome to <br><span class="fa-brands fa-stack-overflow"></span> JOBSTACK</h1>
+    </div>
+    
+    <div class="login">
+        <h2>Member Login</h2>
+        <form method="post" action="/home/login" class="rounded-form needs-validation" novalidate>
+            <input type="text" class="logbox" placeholder="username" name="username" required>
+            <br>
+            <input type="password" class="logbox" placeholder="password" name="password" required>
+            <br>
+            <br>
+            <button>LOGIN</button>
+           
+        </form>
+        <a id="forgot" href="/home/forgot">Forgot username/Password?</a>
+    
+        <a class="create" href="/home/register">create your account &rarr;</a>
+    </div>
+    
+    <script src="/script.js"></script>
+</body>
+</html>
